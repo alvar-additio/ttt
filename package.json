@@ -1,0 +1,20 @@
+{
+  "name": "time-tab-hr-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "zipit": "pnpm build && zip -r time-tracker-tab.zip manifest.json dist/ popup/ icon.png"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@types/chrome": "^0.1.1",
+    "typescript": "^5.8.3"
+  }
+}
